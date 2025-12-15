@@ -1,0 +1,5 @@
+{
+  "name": "SmartHome Controller",
+  "description": "A Material Design inspired smart home dashboard with customizable rooms, device controllers, and an admin interface for configuration.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f2f4f6;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dark body {
+  background-color: #030712; /* gray-950 */
+}
+
+/* Custom Range Slider Styling */
+input[type=range] {
+  -webkit-appearance: none; 
+  background: transparent; 
+  cursor: pointer;
+}
+
+/* Webkit thumb needs dimensions to be draggable even if parent input is opacity 0 */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+/* Firefox */
+input[type=range]::-moz-range-thumb {
+  height: 24px;
+  width: 24px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type=range]:focus {
+  outline: none; 
+}
+
+/* Hide scrollbar for cleaner look */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

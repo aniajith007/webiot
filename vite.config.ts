@@ -1,0 +1,1 @@
+// Configuration moved to vite.config.js
