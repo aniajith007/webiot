@@ -13,6 +13,7 @@ import { useNavigate } from "react-router-dom";
 import { INITIAL_STATE, getIcon } from "../constants";
 import DeviceCard from "./DeviceCard";
 import AdminPanel from "./AdminPanel copy";
+import EnergyGraph from "./Chart";
 
 const LogoutDialog = ({ onConfirm, onCancel }) => {
   return (
@@ -214,6 +215,7 @@ const Dashboard = () => {
             </div>
           </section>
         ))}
+        <EnergyGraph />
       </main>
 
       {/* Admin Overlay */}
