@@ -74,7 +74,7 @@ const LandingPage = () => {
       
       {/* Footer */}
       <footer className="relative z-10 text-center py-8 text-gray-500 text-sm mt-auto">
-        © 2024 Mohana-Ajith. All rights reserved.
+        © {new Date().getFullYear()} Swaminathan-Mohanakumari. All rights reserved.
       </footer>
     </div>
   );

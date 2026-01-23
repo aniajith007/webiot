@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Moon, Sun } from 'lucide-react';
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
-import LandingPage from './components/LandingPage';
-import LoginPage from './components/LoginPage';
+import LandingPage from './components/LandingPage copy';
+import LoginPage from './components/LoginPage copy';
 
 const App = () => {
   // Dark mode state initialization - Lifted up to cover all pages
