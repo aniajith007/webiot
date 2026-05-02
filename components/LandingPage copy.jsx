@@ -4,6 +4,8 @@ import { LayoutDashboard } from "lucide-react";
 import image1 from "../components/Assests/image1.jpeg";
 import image2 from "../components/Assests/image2.jpeg";
 import image3 from "../components/Assests/image3.jpeg";
+import lightlogo from "../components/Assests/Darkmode.jpeg";
+import darklogo from "../components/Assests/Lightmode.jpeg";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -36,7 +38,18 @@ const LandingPage = () => {
       {/* Splash Screen Content */}
       <div className="relative z-10 flex flex-col items-center animate-in fade-in zoom-in duration-500">
         <div className="bg-white text-gray-900 p-4 rounded-2xl mb-6 shadow-2xl shadow-blue-500/20">
-          <LayoutDashboard className="w-12 h-12" />
+          <div className=" text-white dark:text-gray-900 shadow-lg mb-2">
+            <img
+              src={lightlogo}
+              alt="Logo"
+              className="w-20 h-15  dark:hidden"
+            />
+            <img
+              src={darklogo}
+              alt="Logo"
+              className="w-20 h-15 hidden dark:block"
+            />
+          </div>
         </div>
 
         {/* Rotating Images - Increased size */}
